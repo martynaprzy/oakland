@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Oakland</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<!--navigation-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="./images/LogoMakr_3Mk40L.png" alt="logo" height="100" width="260">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="table.html">Create your own table</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="connect.html">Connect</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--welcome section-->
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Services</h1>
+        </div>
+        <hr>
+        <div class="col-12">
+            <p class="lead">WItamy na naszej stronie OAKLAND Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut culpa dicta dolore illum inventore magnam, possimus provident quod soluta voluptatum. Atque beatae inventore magnam provident quam reiciendis totam ut voluptatibus.</p>
+        </div>
+    </div>
+</div>
+<!--connect-->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12">
+            <h2>Connect</h2>
+        </div>
+        <div class="col-12 social padding">
+            <a href="facebook.com"><i class="fab fa-facebook"> </i></a>
+            <a href="facebook.com"><i class="fab fa-instagram"> </i></a>
+            <a href="facebook.com"><i class="fab fa-google-plus-g"> </i></a>
+        </div>
+    </div>
+</div><!--footer-->
+<footer>
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="images/LogoMakr_3Mk40L.png" alt="" class="logo-small">
+                <hr class="light">
+                <p><i class="fas fa-phone"></i>  874-33-33-22</p>
+                <p><a href="mailto:oakland@example.com"><i class="far fa-envelope"></i> oakland@example.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i>&nbsp;ul. Kopernika 10<br> 01-234 Warszawa</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h5><i class="far fa-clock"></i> Our hours</h5>
+                <hr class="light">
+                <p>Monday: 9-5pm</p>
+                <p>Tuesday: 9-5pm</p>
+                <p>Wednesday: 8-6pm</p>
+                <p>Thursday : 10-8pm</p>
+                <p>Friday: 10-9pm</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Map</h5>
+                <hr class="light">
+                <div id="map"></div>
+                <script>
+                    function initMap() {
+                        var uluru = {lat: 28.501859, lng: 77.410320};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 4,
+                            center: uluru
+                        });
+                        var marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map
+                        });
+                    }
+                </script>
+                <script async defer
+                        src=
+                                "https://maps.googleapis.com/maps/api/js?key=
+AIzaSyBHa1_h6LIhfOIZW4k5Tb7T6LmbL2Bn5Kw&callback=initMap">
+                </script>
+            </div>
+            <div class="col-12">
+                <hr class="light-full">
+                <h5>&copy; oakland.pl</h5>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
